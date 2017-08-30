@@ -1,6 +1,7 @@
 package test;
 
 import modelo.Numero;
+import modelo.Punto;
 
 public class TestNumero {
 
@@ -41,8 +42,18 @@ public class TestNumero {
 		System.out.println(numero3.getN()+" = "+numero3.calcularPotencia(2));
 		
 		
-				
+		System.out.println("---------- Metodos Punto --------------");
 		
+		Punto punto1 = new Punto (7,15);
+		Punto punto2 = new Punto (47,4);
+		Punto punto3= new Punto (7,15);
+		
+		System.out.println(punto1.toString());
+		System.out.println(punto2.toString());
+		System.out.println(punto1.equals(punto2));
+		System.out.println(punto1.equals(punto3));
+		System.out.println("Distancia entre 2 puntos");
+		System.out.println(punto1.calcularDistancia(punto2));
 		
 	}
 

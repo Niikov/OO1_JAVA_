@@ -32,12 +32,12 @@ public class Punto {
 		
 		public String toString(){
 			
-			return String.valueOf(this.getX()+this.getY());
+			return "("+this.x+","+this.y+")";
 		}
 		
 		
 		public boolean equals(Punto p){
-			 if (p.getX()==p.getY()){
+			 if (this.x== p.getX() && this.y== p.getY()){
 				  
 				 return true;
 				 
